@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+require("source-map-support/register");
+const cdk = require("aws-cdk-lib");
+const statusdeck_stack_1 = require("../lib/statusdeck-stack");
+const app = new cdk.App();
+new statusdeck_stack_1.StatusDeckStack(app, 'StatusDeckStack', {
+    env: {
+        account: process.env.CDK_DEFAULT_ACCOUNT || process.env.AWS_ACCOUNT_ID,
+        region: process.env.CDK_DEFAULT_REGION || process.env.AWS_REGION || 'ap-south-1',
+    },
+    description: 'StatusDeck: Multi-Tenant SaaS Uptime Monitoring Stack (Academic Cloud Computing FT-III)',
+});
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5mcmEuanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJpbmZyYS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7QUFDQSx1Q0FBcUM7QUFDckMsbUNBQW1DO0FBQ25DLDhEQUEwRDtBQUUxRCxNQUFNLEdBQUcsR0FBRyxJQUFJLEdBQUcsQ0FBQyxHQUFHLEVBQUUsQ0FBQztBQUUxQixJQUFJLGtDQUFlLENBQUMsR0FBRyxFQUFFLGlCQUFpQixFQUFFO0lBQzFDLEdBQUcsRUFBRTtRQUNILE9BQU8sRUFBRSxPQUFPLENBQUMsR0FBRyxDQUFDLG1CQUFtQixJQUFJLE9BQU8sQ0FBQyxHQUFHLENBQUMsY0FBYztRQUN0RSxNQUFNLEVBQUUsT0FBTyxDQUFDLEdBQUcsQ0FBQyxrQkFBa0IsSUFBSSxPQUFPLENBQUMsR0FBRyxDQUFDLFVBQVUsSUFBSSxZQUFZO0tBQ2pGO0lBQ0QsV0FBVyxFQUFFLHlGQUF5RjtDQUN2RyxDQUFDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyIjIS91c3IvYmluL2VudiBub2RlXG5pbXBvcnQgJ3NvdXJjZS1tYXAtc3VwcG9ydC9yZWdpc3Rlcic7XG5pbXBvcnQgKiBhcyBjZGsgZnJvbSAnYXdzLWNkay1saWInO1xuaW1wb3J0IHsgU3RhdHVzRGVja1N0YWNrIH0gZnJvbSAnLi4vbGliL3N0YXR1c2RlY2stc3RhY2snO1xuXG5jb25zdCBhcHAgPSBuZXcgY2RrLkFwcCgpO1xuXG5uZXcgU3RhdHVzRGVja1N0YWNrKGFwcCwgJ1N0YXR1c0RlY2tTdGFjaycsIHtcbiAgZW52OiB7XG4gICAgYWNjb3VudDogcHJvY2Vzcy5lbnYuQ0RLX0RFRkFVTFRfQUNDT1VOVCB8fCBwcm9jZXNzLmVudi5BV1NfQUNDT1VOVF9JRCxcbiAgICByZWdpb246IHByb2Nlc3MuZW52LkNES19ERUZBVUxUX1JFR0lPTiB8fCBwcm9jZXNzLmVudi5BV1NfUkVHSU9OIHx8ICdhcC1zb3V0aC0xJyxcbiAgfSxcbiAgZGVzY3JpcHRpb246ICdTdGF0dXNEZWNrOiBNdWx0aS1UZW5hbnQgU2FhUyBVcHRpbWUgTW9uaXRvcmluZyBTdGFjayAoQWNhZGVtaWMgQ2xvdWQgQ29tcHV0aW5nIEZULUlJSSknLFxufSk7XG4iXX0=

@@ -1,0 +1,22 @@
+{
+  "name": "statusdeck-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "StatusDeck: Multi-Tenant SaaS Uptime-Monitoring Platform (Final-Year Cloud Computing Case Study FT-III)",
+  "workspaces": [
+    "frontend",
+    "backend",
+    "infra",
+    "loadtest"
+  ],
+  "scripts": {
+    "dev:backend": "npm --workspace=backend run dev",
+    "dev:frontend": "npm --workspace=frontend run dev",
+    "test:backend": "npm --workspace=backend test",
+    "build:all": "npm --workspace=backend run build && npm --workspace=frontend run build && npm --workspace=infra run build",
+    "cdk": "npm --workspace=infra run cdk --"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  }
+}

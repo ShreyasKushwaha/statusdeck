@@ -1,0 +1,20 @@
+{
+  "virtualUsers": 10,
+  "phase": "idle_baseline",
+  "instances": 1,
+  "durationSeconds": 30,
+  "requestsPerSecond": 1845.2,
+  "totalRequests": 55356,
+  "throughputBytesPerSec": 479752,
+  "latency": {
+    "p50": 5.2,
+    "p95": 11.4,
+    "p99": 18.1,
+    "avg": 5.8,
+    "min": 1.2,
+    "max": 42
+  },
+  "errorRate": 0,
+  "cpuUtilizationPct": 24.5,
+  "timestamp": "2026-10-17T17:56:28.883Z"
+}

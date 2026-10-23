@@ -1,0 +1,14 @@
+{
+  "name": "statusdeck-loadtest",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test:10": "node run-benchmark.js --connections 10 --duration 20",
+    "test:50": "node run-benchmark.js --connections 50 --duration 20",
+    "test:200": "node run-benchmark.js --connections 200 --duration 25",
+    "test:all": "node run-all.js"
+  },
+  "dependencies": {
+    "autocannon": "^7.15.0"
+  }
+}

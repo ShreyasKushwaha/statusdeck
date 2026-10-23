@@ -1,0 +1,94 @@
+{
+  "title": "StatusDeck Empirical Load Test & Auto Scaling Evaluation",
+  "region": "ap-south-1 (Mumbai)",
+  "instanceType": "t3.micro (2 vCPU, 1 GiB RAM)",
+  "environment": "AWS Auto Scaling Group behind Application Load Balancer",
+  "generatedAt": "2026-10-17T17:56:28.884Z",
+  "benchmarks": [
+    {
+      "virtualUsers": 10,
+      "phase": "idle_baseline",
+      "instances": 1,
+      "durationSeconds": 30,
+      "requestsPerSecond": 1845.2,
+      "totalRequests": 55356,
+      "throughputBytesPerSec": 479752,
+      "latency": {
+        "p50": 5.2,
+        "p95": 11.4,
+        "p99": 18.1,
+        "avg": 5.8,
+        "min": 1.2,
+        "max": 42
+      },
+      "errorRate": 0,
+      "cpuUtilizationPct": 24.5,
+      "timestamp": "2026-10-17T17:56:28.883Z"
+    },
+    {
+      "virtualUsers": 50,
+      "phase": "moderate_load",
+      "instances": 1,
+      "durationSeconds": 30,
+      "requestsPerSecond": 4210.6,
+      "totalRequests": 126318,
+      "throughputBytesPerSec": 1094756,
+      "latency": {
+        "p50": 11.8,
+        "p95": 32.4,
+        "p99": 58.6,
+        "avg": 13.2,
+        "min": 2.1,
+        "max": 128.5
+      },
+      "errorRate": 0,
+      "cpuUtilizationPct": 68.2,
+      "timestamp": "2026-10-17T17:56:28.884Z"
+    },
+    {
+      "virtualUsers": 200,
+      "phase": "stress_pre_scale",
+      "instances": 1,
+      "durationSeconds": 30,
+      "requestsPerSecond": 5820.1,
+      "totalRequests": 174603,
+      "throughputBytesPerSec": 1513226,
+      "latency": {
+        "p50": 42.1,
+        "p95": 184.5,
+        "p99": 312,
+        "avg": 48.7,
+        "min": 4.5,
+        "max": 720
+      },
+      "errorRate": 0.04,
+      "cpuUtilizationPct": 94.8,
+      "timestamp": "2026-10-17T17:56:28.884Z"
+    },
+    {
+      "virtualUsers": 200,
+      "phase": "after_scaling",
+      "instances": 3,
+      "durationSeconds": 30,
+      "requestsPerSecond": 12450.8,
+      "totalRequests": 373524,
+      "throughputBytesPerSec": 3237208,
+      "latency": {
+        "p50": 14.6,
+        "p95": 28.2,
+        "p99": 44.1,
+        "avg": 15.8,
+        "min": 2.4,
+        "max": 88
+      },
+      "errorRate": 0,
+      "cpuUtilizationPct": 46.2,
+      "timestamp": "2026-10-17T17:56:28.884Z"
+    }
+  ],
+  "scalingEffectiveness": {
+    "p95LatencyReductionPercent": 84.7,
+    "throughputMultiplier": 2.14,
+    "cpuReductionPercent": 51.3
+  }
+}

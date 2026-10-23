@@ -1,0 +1,20 @@
+{
+  "virtualUsers": 200,
+  "phase": "stress_pre_scale",
+  "instances": 1,
+  "durationSeconds": 30,
+  "requestsPerSecond": 5820.1,
+  "totalRequests": 174603,
+  "throughputBytesPerSec": 1513226,
+  "latency": {
+    "p50": 42.1,
+    "p95": 184.5,
+    "p99": 312,
+    "avg": 48.7,
+    "min": 4.5,
+    "max": 720
+  },
+  "errorRate": 0.04,
+  "cpuUtilizationPct": 94.8,
+  "timestamp": "2026-10-17T17:56:28.884Z"
+}

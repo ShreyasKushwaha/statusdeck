@@ -1,0 +1,20 @@
+{
+  "virtualUsers": 50,
+  "phase": "moderate_load",
+  "instances": 1,
+  "durationSeconds": 30,
+  "requestsPerSecond": 4210.6,
+  "totalRequests": 126318,
+  "throughputBytesPerSec": 1094756,
+  "latency": {
+    "p50": 11.8,
+    "p95": 32.4,
+    "p99": 58.6,
+    "avg": 13.2,
+    "min": 2.1,
+    "max": 128.5
+  },
+  "errorRate": 0,
+  "cpuUtilizationPct": 68.2,
+  "timestamp": "2026-10-17T17:56:28.884Z"
+}
